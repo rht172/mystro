@@ -1,43 +1,75 @@
-/* CSS for the navigation bar */
+/* style.css */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+}
+.hero
+{
+  padding: 10px;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  background-color: #333; /* Background color */
+  overflow: hidden; /* Clear floats */
+}
+
+/* Style for the brand name */
+.navbar .brand {
+  float: left; /* Float the brand name to the left */
+  padding: 15px; /* Add some padding for spacing */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underlines from the link */
+  font-size: 24px; /* Font size */
+}
+
+/* Style for the navigation links */
+.navbar a {
+  float: right; /* Float the links to the right */
+  display: block; /* Display them as block elements */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  padding: 15px 20px; /* Add padding for spacing */
+  text-decoration: none; /* Remove underlines from the links */
+}
+
+/* Change link color when you hover over it */
+.navbar a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: #333; /* Text color on hover */
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
   }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-  }
-  header .container {
+
+  .navbar.active {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #333;
+    z-index: 1;
+  }
+
+  .navbar.active a {
+    padding: 10px 20px;
+  }
+
+  .header {
     justify-content: space-between;
-    align-items: center;
   }
-  
-  header #logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  header ul li:last-child {
-    margin-right: 0;
-  }
-  
-  header ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
+}

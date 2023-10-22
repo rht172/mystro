@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Include the same header as in the homepage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+    <title>Contact Mystro</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Travel Agency</h1>
-        <!-- Add the following navigation bar to the header -->
+        <section class="logo">
+            <a href="index.html" ><img src="images/logo.jpg" width="100" ></a>
+        </section>
+        <h1 class="logo" ></h1>
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="clothes.html">clothes</a>
-            <a href="shoes.html">shoes</a>
-            <a href="contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="clothes.html">Clothes</a>
+          <a href="footwear.html">Footwear</a>
+          <a href="contact.html">Contact</a>
         </nav>
-
-    </header>
-    <section class="inner-page">
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+      </header>
+    <div class="container">
         <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>If you have any questions or need assistance, please don't hesitate to get in touch with us. We're here to help!</p>
-            <address>
-                <p>Travel Agency Inc.</p>
-                <p>123 Travel Street</p>
-                <p>City, Country</p>
-                <p>Email: info@travelagency.com</p>
-                <p>Phone: +1 (123) 456-7890</p>
-            </address>
+            <h2>About Mystro</h2>
+            <article>At Mystro, we believe that fashion is not just about clothing and footwear; it's a reflection of your unique style and personality. Our brand is dedicated to creating high-quality, stylish, and versatile clothing and footwear that cater to the diverse tastes and preferences of our customers. Whether you're looking for trendy streetwear, elegant formal attire, or comfortable everyday essentials, we've got you covered.</article>
+            <article class="Email">Email: info@mystroclothing.com</article>
+            <article class="Phone">Phone: +1 (123) 456-7890</article>
+            <article class="Address">Address: 123 Fashion Street, City, Country</article>
         </div>
-    </section>
-    <footer>
-        <!-- Include the same footer as in the homepage -->
-    </footer>
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d151773.30721105204!2d-113.763333!3d53.5317374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224580deff23%3A0x411fa00c4af6155d!2sEdmonton%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sin!4v1697909781943!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Mystro. All rights reserved.
+        <section class="social-icons">
+            <a href="https://www.instagram.com" class="icon"><img src="images/instagram.jpg"  width="30px" height="30px" class="fab fa-instagram"></img></a>
+            <a href="https://www.facebook.com" class="icon"><img src="images/facebook.jpg" width="30px" height="30px" class="fab fa-facebook"></img></a>
+            <a href="https://www.twitter.com" class="icon"><img src="images/x.jpg" width="30px" height="30px" class="fab fa-x"></img></a>
+            <a href="https://in.pinterest.com" class="icon"><img src="images/pinterest.jpg" width="30px" height="30px" class="fab fa-pinterest"></img></a>
+        </section>
+      </footer>
 </body>
 </html>
